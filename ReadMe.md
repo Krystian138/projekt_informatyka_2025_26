@@ -1,6 +1,6 @@
-# Arkanoid – projekt z Informatyki II (C++ / SFML)
+ Arkanoid – projekt z Informatyki II (C++ / SFML)
 
-## Opis gry
+ Opis gry
 
 Projekt jest prostą grą typu **Arkanoid** napisaną w C++ z użyciem biblioteki **SFML**.  
 Gracz steruje paletką na dole ekranu i odbija piłkę tak, aby zbić wszystkie klocki na planszy.  
@@ -8,9 +8,9 @@ Po przegranej wynik jest zapisywany do pliku i można go później obejrzeć w e
 
 Rozdzielczość okna: **800 × 600**, liczba FPS ograniczona do **60**.
 
----
 
-## Funkcjonalności
+
+ Funkcjonalności
 
 - gra w trybie graficznym z animowanymi obiektami (paletka, piłka, klocki),
 - sterowanie z klawiatury (menu + rozgrywka),
@@ -29,49 +29,48 @@ Rozdzielczość okna: **800 × 600**, liczba FPS ograniczona do **60**.
   - `GameState` – serializacja stanu gry (snapshot),
   - `Menu` – menu główne.
 
----
 
-## Sterowanie
 
-### Menu główne
+ Sterowanie
 
-- **Strzałka ↑ / ↓** – zmiana zaznaczonej opcji w menu,
-- **Enter** – zatwierdzenie wyboru,
-- **ESC** – wyjście z gry (lub powrót do menu z innych ekranów).
+ Menu główne
+
+- Strzałka ↑ / ↓ – zmiana zaznaczonej opcji w menu,
+- Enter – zatwierdzenie wyboru,
+- ESC – wyjście z gry (lub powrót do menu z innych ekranów).
 
 Przykładowe pozycje w menu:
 
-1. **Nowa gra** – start od początku,
-2. **Wczytaj zapis** – kontynuacja z pliku `zapis.txt`,
-3. **Ostatnie wyniki** – wyświetlenie zawartości `wyniki.txt`,
-4. **Wyjście** – zamknięcie programu.
+1. Nowa gra – start od początku,
+2. Wczytaj zapis – kontynuacja z pliku `zapis.txt`,
+3. Ostatnie wyniki – wyświetlenie zawartości `wyniki.txt`,
+4. Wyjście – zamknięcie programu.
 
-### Podczas gry
+Podczas gry
 
-- **Strzałka ← / →** – ruch paletki w lewo / prawo,
-- **S** – zapis aktualnego stanu gry do pliku `zapis.txt`,
-- **ESC** – powrót do menu głównego.
+- Strzałka ← / → – ruch paletki w lewo / prawo,
+- S – zapis aktualnego stanu gry do pliku `zapis.txt`,
+- ESC – powrót do menu głównego.
 
----
 
-## Zapis stanu gry i wyniki
 
-- **Zapis gry** – po wciśnięciu **S** w trakcie rozgrywki:
+ Zapis stanu gry i wyniki
+
+- Zapis gry – po wciśnięciu S w trakcie rozgrywki:
   - program tworzy „snapshot” obiektów (`GameState`),
   - zapisuje pozycję paletki, piłki, wektor klocków (pozycje + punkty życia) do pliku `zapis.txt`.
 
-- **Wczytanie gry** – z menu wybieramy opcję **Wczytaj zapis**:
+- Wczytanie gry – z menu wybieramy opcję Wczytaj zapis:
   - plik `zapis.txt` jest wczytywany,
   - stan gry jest odtwarzany: paletka, piłka, klocki wracają do zapisanych pozycji.
 
-- **Wyniki** – po przegranej (piłka spada poniżej dolnej krawędzi okna):
+- Wyniki – po przegranej (piłka spada poniżej dolnej krawędzi okna):
   - aktualny wynik gracza dopisywany jest do pliku `wyniki.txt`,
-  - w menu można przejść do ekranu **Ostatnie wyniki**,  
+  - w menu można przejść do ekranu Ostatnie wyniki,  
     gdzie tekst z pliku jest wyświetlany w oknie gry.
 
----
 
-## Struktura katalogów i ważniejsze pliki
+ Struktura katalogów i ważniejsze pliki
 
 Projekt znajduje się w katalogu `początek2`.
 
@@ -93,7 +92,7 @@ Najważniejsze pliki:
 
 ---
 
-## Jak uruchomić projekt
+Jak uruchomić projekt
 
 1. Zainstaluj **Visual Studio** z obsługą „Desktop development with C++”.
 2. Zainstaluj bibliotekę **SFML 2.x** (wersja dla Visual Studio, 64-bit).
@@ -101,9 +100,10 @@ Najważniejsze pliki:
 4. Otwórz plik projektu:  
    `początek2/początek2.vcxproj` w Visual Studio.
 5. Upewnij się, że w ustawieniach projektu:
-   - ścieżki **Include** i **Library** wskazują na katalogi z SFML,
+   - ścieżki Include i Library wskazują na katalogi z SFML,
    - dołączone są odpowiednie biblioteki (`sfml-graphics`, `sfml-window`, `sfml-system` – wersje debug/release).
-6. Wybierz konfigurację **Debug** lub **Release**, platformę **x64**.
+6. Wybierz konfigurację Debug lub Release, platformę x64.
 7.  uruchom projekt.
 
 ---
+
