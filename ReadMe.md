@@ -6,7 +6,7 @@ Projekt jest prostą grą typu **Arkanoid** napisaną w C++ z użyciem bibliotek
 Gracz steruje paletką na dole ekranu i odbija piłkę tak, aby zbić wszystkie klocki na planszy.  
 Po przegranej wynik jest zapisywany do pliku i można go później obejrzeć w ekranie wyników.
 
-Rozdzielczość okna: **800 × 600**, liczba FPS ograniczona do **60**.
+Rozdzielczość okna: 800 × 600, liczba FPS ograniczona do 60.
 
 
 
@@ -15,19 +15,19 @@ Rozdzielczość okna: **800 × 600**, liczba FPS ograniczona do **60**.
 - gra w trybie graficznym z animowanymi obiektami (paletka, piłka, klocki),
 - sterowanie z klawiatury (menu + rozgrywka),
 - kolizje:
-  - piłka–ściany,
-  - piłka–paletka,
-  - piłka–klocki (znikanie / zmiana koloru po trafieniu),
+- piłka–ściany,
+- piłka–paletka,
+- piłka–klocki (znikanie / zmiana koloru po trafieniu),
 - kilka poziomów „wytrzymałości” klocków (kolor zależny od liczby punktów życia),
 - zapis i odczyt **stanu gry** do pliku `zapis.txt`,
 - zapis wyników gracza do pliku `wyniki.txt` i ekran z listą ostatnich wyników,
 - prosta architektura obiektowa:
-  - `Game` – logika gry,
-  - `Paletka` – sterowanie paletką,
-  - `Pilka` – ruch i kolizje piłki,
-  - `Stone` – klocek,
-  - `GameState` – serializacja stanu gry (snapshot),
-  - `Menu` – menu główne.
+- `Game` – logika gry,
+- `Paletka` – sterowanie paletką,
+- `Pilka` – ruch i kolizje piłki,
+- `Stone` – klocek,
+- `GameState` – serializacja stanu gry (snapshot),
+- `Menu` – menu główne.
 
 
 
@@ -57,16 +57,16 @@ Podczas gry
  Zapis stanu gry i wyniki
 
 - Zapis gry – po wciśnięciu S w trakcie rozgrywki:
-  - program tworzy „snapshot” obiektów (`GameState`),
-  - zapisuje pozycję paletki, piłki, wektor klocków (pozycje + punkty życia) do pliku `zapis.txt`.
+- program tworzy „snapshot” obiektów (`GameState`),
+- zapisuje pozycję paletki, piłki, wektor klocków (pozycje + punkty życia) do pliku `zapis.txt`.
 
 - Wczytanie gry – z menu wybieramy opcję Wczytaj zapis:
-  - plik `zapis.txt` jest wczytywany,
-  - stan gry jest odtwarzany: paletka, piłka, klocki wracają do zapisanych pozycji.
+- plik `zapis.txt` jest wczytywany,
+- stan gry jest odtwarzany: paletka, piłka, klocki wracają do zapisanych pozycji.
 
 - Wyniki – po przegranej (piłka spada poniżej dolnej krawędzi okna):
-  - aktualny wynik gracza dopisywany jest do pliku `wyniki.txt`,
-  - w menu można przejść do ekranu Ostatnie wyniki,  
+- aktualny wynik gracza dopisywany jest do pliku `wyniki.txt`,
+- w menu można przejść do ekranu Ostatnie wyniki,  
     gdzie tekst z pliku jest wyświetlany w oknie gry.
 
 
@@ -90,7 +90,7 @@ Najważniejsze pliki:
 - `wyniki.txt` – plik tekstowy z wynikami gracza,
 - `początek2.vcxproj` – plik projektu Visual Studio.
 
----
+
 
 Jak uruchomić projekt
 
@@ -105,5 +105,5 @@ Jak uruchomić projekt
 6. Wybierz konfigurację Debug lub Release, platformę x64.
 7.  uruchom projekt.
 
----
+
 
