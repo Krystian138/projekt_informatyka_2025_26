@@ -1,0 +1,23 @@
+﻿  Game.cpp
+  GameState.cpp
+  Menu.cpp
+  Stonge.cpp
+  paletka.cpp
+  pilka.cpp
+  początek2.cpp
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,51): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,51): warning C4244:         with
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,51): warning C4244:         [
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,51): warning C4244:             T=unsigned int
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,51): warning C4244:         ]
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,31): warning C4244: "argument": konwersja z "T" do "float", możliwa utrata danych
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,31): warning C4244:         with
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,31): warning C4244:         [
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,31): warning C4244:             T=unsigned int
+C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\początek2\początek2.cpp(16,31): warning C4244:         ]
+  Trwa generowanie kodu
+  1 of 551 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  początek2.vcxproj -> C:\Users\wrobl\OneDrive\Pulpit\projekty C\początek2\x64\Release\początek2.exe
